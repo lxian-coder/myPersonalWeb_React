@@ -1,6 +1,7 @@
 import React, { JSXElementConstructor } from 'react';
 import Button from '../Header/components/Navbar/Button/Button';
-import Header from '../Header/Header'
+import Header from '../Header/Header';
+import Pages from '../Pages/Pages';
 
 type Props={};
 type State={
@@ -14,10 +15,8 @@ class App extends React.Component<Props, State>{
         this.state = {
             buttonDrop : false,
         };
-  
         this.buttonAction = this.buttonAction.bind(this);
     }
-    
     buttonAction (drop:boolean){
         this.setState({
             buttonDrop: drop ,
@@ -25,7 +24,6 @@ class App extends React.Component<Props, State>{
     }
    
     render() {
-     
         const buttonActionObj = {
             buttonAction : this.buttonAction,
             test1 : "aaa",
@@ -33,6 +31,7 @@ class App extends React.Component<Props, State>{
        return(
            <div>
                <Header {...buttonActionObj}/>
+               <Pages />
            </div>
        )
    }
