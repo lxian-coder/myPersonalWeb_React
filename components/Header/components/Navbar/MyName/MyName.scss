@@ -1,0 +1,14 @@
+@import '../../../ScssVariables.scss/ScssVariables.scss';
+.myName{
+    margin-left: 2%;
+   font-weight: 1000;
+   font-size: 2rem;
+   color:$myblue;
+   letter-spacing: 1px;
+    min-width:120px ;
+    max-width: 100%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
