@@ -24,7 +24,8 @@ module.exports = {
                 use: {
                   loader: 'babel-loader',
                   options: {
-                    presets: ['@babel/preset-react']
+                    presets: ['@babel/preset-react', "@babel/preset-env",
+                    "@babel/preset-typescript"]
                   }
                 }
             },
@@ -44,7 +45,6 @@ module.exports = {
                 use: [
                   // Creates `style` nodes from JS strings
                   "style-loader",
-            
                   "css-loader",
                   // Translates CSS into CommonJS
                   "postcss-loader",  // css-loader  改成 postcss-loader  可以自动加上-webkit 增加兼容性

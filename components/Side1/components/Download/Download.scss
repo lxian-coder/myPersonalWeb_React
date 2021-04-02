@@ -1,0 +1,57 @@
+.side1__attachememts{
+    padding: 0px 15px;
+    margin-top: 40px;
+}
+.attachment__download{
+    max-width: 100%;
+    border-radius: 20px;
+    border: solid 2px  #5371ff;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 15px 3px rgb(0 0 0 / 30%);
+    &::after{
+        content: " ";
+        height: 120%;
+        width: 120%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        background: #5371ff;
+        transform-origin: right;
+        transform: scale(0,1) skewX(-90deg); 
+        transition: all 1s ease;
+        z-index: 1;
+    }
+    &:hover{
+        box-shadow: 0 8px 5px 4px rgb(0 0 0 / 50%);
+        .attachment__download__link{
+            color: seashell;
+        }
+    }
+    &:hover::after{
+        transform:scale(1.5,1);
+    }
+   &__link{
+       width: 100%;
+    text-decoration: none;
+    font-size: 13px;
+    color: #5371ff;
+    transition: all 0.5s ease;
+    position: relative;   
+    z-index: 2;
+   }
+   &__svg{
+       position: absolute;
+       left:10%
+   }
+}

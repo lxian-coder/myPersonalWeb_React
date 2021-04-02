@@ -1,15 +1,12 @@
 import React from 'react';
 import './Home.scss';
 
-
 const Home = (props:{active:string}) => {
     let className:string = 'backgroundPicture';
     if(props.active === 'active'){
      className += ' pageActive';
      console.log({className});
-     
     }
-
 
     return  <div className={className}>
   <div className='homeBodyContainer'>
@@ -23,11 +20,8 @@ const Home = (props:{active:string}) => {
             <div className="vcardText"> <div className="vcardText2">Vcard Style</div> </div>
         </div>
     </a>
+   </div>
 </div>
-
-    </div> 
-    
-  
 }
 
 export default Home;

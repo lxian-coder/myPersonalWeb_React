@@ -36,6 +36,5 @@ class App extends React.Component<Props, State>{
        )
    }
 
-
 }
 export default App;
