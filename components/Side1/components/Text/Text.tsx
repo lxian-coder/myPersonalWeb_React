@@ -17,7 +17,7 @@ const Text = ()=>{
   </div>
   <div className="details">
       <h3 className="details__h3">Email</h3>
-      <p className="details__p">darcyxianau@gmail.com</p>
+      <p className="details__p">darcyxianau@gmail.comm</p>
   </div>
   <div className="details">
       <h3 className="details__h3">Website</h3>

@@ -1,0 +1,114 @@
+@import '../../../../../../../ScssVariables.scss/ScssVariables.scss';
+
+.side2Container__part2 {
+    margin-top: 65px;
+    width: 100%;
+    position: relative;
+  }
+  .side2Container__description {
+    margin-bottom: 22px;
+  }
+  .side2Container__p {
+    color: grey;
+    color: #5a5a5a;
+  }
+  
+  .part2__body{
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    position: relative;
+    &__icon{
+        font-size: 40px;
+        color: gray;
+        transition: all 1s ease;
+        &:hover{
+           animation-name: upDown;
+           animation-duration: 0.8s;
+        }
+   }
+   &__shadowtext1{
+        color: lighten($color:$myblue, $amount: 25%);
+        font-size: 55px;
+        position: absolute;
+        left: 74px;
+        top: -28px;
+        z-index: -1;
+   }
+   &__shadowtext2 {
+       @extend .part2__body__shadowtext1;
+       left: -26px;
+   }
+   &__h2{
+       text-shadow: 0.05em 0.05em 0.1em black;
+       color: gray;
+   }
+    &__h3{
+        max-width: 25%;
+        width: 100%;
+        margin-left: 25px;
+        margin-right: 10px;
+        &:hover{
+           animation-name: upDown;
+           animation-duration: 0.8s;
+        }
+    }
+    &__p{
+       max-width: 60%;
+        width: 100%; 
+        color:darken($color:grey, $amount: 15);
+    }
+    }
+
+    @keyframes upDown {
+       0%{
+          transform: translateY(0rem);
+       }
+       25%{
+          transform: translateY(-0.625rem);
+       }
+       75%{
+          transform: translateY(0.625rem);
+       }
+       100%{
+          transform: translateY(0rem);
+   }
+}
+
+.seemore{
+   margin-top: 15px;
+   margin-left: 85%;
+   top: 100px;
+   font-size: 15px;
+   font-weight: 500;
+ 
+   &__a{
+       text-decoration: none;
+       letter-spacing: 1px;
+   }
+   &::after{
+       margin-left: 85%;
+       content: " ";
+       height: 3px;
+       max-width: 130px;
+       width: 100%;
+       border-radius: 20px;
+       position: absolute;
+       left: 0;
+       top: 100%;
+       background: $myblue;
+       transition: all 0.3s ease;
+       transform-origin: left;
+       transform: scale(0.2,1) ;
+   }
+   &:hover::after{
+       transform: scale(0.7);
+   }
+   &:hover{
+       color: $myblue;
+       font-style: italic;
+   }
+}
+

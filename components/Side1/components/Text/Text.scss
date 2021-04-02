@@ -1,0 +1,17 @@
+@import '../../../ScssVariables.scss/ScssVariables.scss';
+
+.side1Container__part2{
+    padding: 0 15px;
+    font-size: small;
+  }
+  .details{
+      margin: 20px 0px;
+      margin-bottom: 10px;
+      &__h3{
+         color:#51535d;
+         margin-bottom: 5px;
+      }
+      &__a{
+          color: $myword;
+      }
+ }

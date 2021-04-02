@@ -1,0 +1,30 @@
+@import '../../../../../../../ScssVariables.scss/ScssVariables.scss';
+
+.side2Container__part2{
+    margin-top: 65px;
+    width: 100%;
+    position: relative;
+   
+}
+.part2__body__shadowtext2 {
+    color: lighten($color:$myblue, $amount: 25%);
+    font-size: 55px;
+    position: absolute;
+    left: 74px;
+    top: -28px;
+    z-index: -1;
+    left: -26px;
+}
+.part2__body__h2{
+    text-shadow: 0.05em 0.05em 0.1em black;
+    color: gray;
+}
+
+.skillsSVG{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillIcons__text{
+  margin: auto;
+}

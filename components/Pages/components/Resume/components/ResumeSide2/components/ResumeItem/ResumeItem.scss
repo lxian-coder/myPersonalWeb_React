@@ -1,0 +1,89 @@
+@import '../../../../../../../ScssVariables.scss//ScssVariables.scss';
+
+.entryContainer{
+    border-left: solid $mygrey 2px;
+    padding-top: 15px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 60px;
+}
+.entry{
+    border: solid $mygrey  2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    position: relative;
+   transition: all 0.5s ease;
+    &:hover{
+        box-shadow:0px 10px 6px 5px rgb(0 0 0 / 30%);
+    }
+    &::before{
+        content: " ";
+        width: 12px;
+        height: 12px;
+        border-radius: 10px;
+        background-color: $myblue;
+        display: inline-block;
+        box-shadow: 0 0 0 0.1875rem rgb(48 76 253 / 25%);
+        position: relative;
+        left: -58px;
+        z-index: 2;
+
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        background: $myblue;
+        height: 2px;
+        width: 25px;
+        border-radius: 1px;
+        position:absolute;
+        left: -27px;
+        top: 21.2px;
+        z-index: 1;
+       
+    }
+
+    &__h4{
+        margin-bottom: 20px;
+  
+        
+    }
+    &__p{
+        font-size: 13px;
+        letter-spacing: 0.7;
+        max-width: 700px;
+    }
+    &__a{
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover{
+            color: blue;
+        }
+        &::after{
+         
+            content: " ";
+            height: 3px;
+            max-width: 130px;
+            width: 100%;
+            border-radius: 20px;
+            position: absolute;
+            left: 20px;
+            top: 60px;
+            background: $myblue;
+            transition: all 0.3s ease;
+            transform-origin: left;
+            transform: scale(0,1) ;
+        }
+        &:hover::after{
+            transform: scale(2,1);
+        }
+    }
+
+
+}

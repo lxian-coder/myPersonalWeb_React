@@ -1,0 +1,32 @@
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    width: 100%;
+    margin:auto;
+}
+
+.defaultBg{
+    display: none;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.AboutBg{
+ @extend .defaultBg;
+ background-image: url(../../../../assets/snow4.jpg);
+ display: flex;
+}
+
+.ResumeBg{
+    @extend .defaultBg;
+    background-image: url(../../../../assets/snow6.jpg);
+    display: flex;
+}
