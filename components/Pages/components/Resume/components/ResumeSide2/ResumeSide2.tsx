@@ -24,10 +24,8 @@ const PROJECT = [{
     techUsed:'Swagger 2.0, JAXB, MapStruct, Postman, Java, SpringBoot 5, Maven, Spring MVC,  CI/CD',
 }]
 
-
-
 const ResumeSide2 = ()=> {
-    return <section className="side2Container ">
+    return <Side2>
     <h2 className="party2__body__title2">PROJECT <span className="part2__body__h2">EXPERIENCE</span>
       <span className="part2__body__shadowtext1">EXPERIENCE</span> 
      </h2>
@@ -40,7 +38,9 @@ const ResumeSide2 = ()=> {
          <div><p className="seemore"> <a className="seemore__a" href="https://github.com/lxian-coder">SEE MORE...</a> </p></div>
     </div>
     <ResumeEdu />
-</section >
+
+    </Side2>
+    
 }
 
 export default ResumeSide2;
