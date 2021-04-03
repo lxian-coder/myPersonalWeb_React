@@ -9,19 +9,18 @@
      
        @media only screen and (min-width: 801px){
            display: flex;
-      
            max-width: 35%;
            width: 100%;
-    
            justify-content: space-around;
            align-items: center;
            margin-right: 9.5rem;
        }
 }
 
-.navbarShow{
+.dropMenuShow{
       display: flex;
 }
+
 .selected{
     color: blue;
 }

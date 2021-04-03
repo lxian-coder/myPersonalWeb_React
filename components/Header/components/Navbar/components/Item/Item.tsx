@@ -7,7 +7,7 @@ const Item = (props:{ onClick:any, children: string, active:boolean}) => {
    if(props.active){
        className += ' selected';
    }
-   
+
     return <a onClick={(event)=>{
         event.preventDefault;
         props.onClick();

@@ -10,7 +10,7 @@ const ITEMS = [{
 },{
         key : 'about',
         currentPage: PAGE.ABOUT,
-        text: 'About',  
+        text: 'About',
 },{
         key : 'resume',
         currentPage: PAGE.RESUME,
@@ -26,14 +26,26 @@ const ITEMS = [{
 },{
         key : 'littlegames',
         currentPage: PAGE.LITTLEGAMES,
-        text: 'LittleGames',   
+        text: 'LittleGames',
 }]
 
-const Navbar = (props:{changPage:any, currentPage:string})=>{
-     
-return <div className='navbar'>
+const Navbar = (props:{changPage:any, currentPage:string,dropMenu:boolean, toggelDropMenu:any})=>{
+
+let className = 'navbar';
+if(props.dropMenu){
+        className += ' dropMenuShow'
+}
+
+return <div className={className}>
         {ITEMS.map((item) => (
-                <Item  active={props.currentPage === item.currentPage}   key={item.key} onClick={()=>props.changPage(item.currentPage)}>{item.text}</Item>
+                <Item 
+                 active={props.currentPage === item.currentPage}  
+                 key={item.key} 
+                 onClick={()=>{
+                         props.changPage(item.currentPage);
+                         props.toggelDropMenu(false);
+                        }}
+                 >{item.text}</Item>
         ))}
        </div>
 }

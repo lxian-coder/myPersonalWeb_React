@@ -4,15 +4,13 @@ import MyName from './components/Navbar/MyName/MyName'
 import './Header.scss'
 import Button from './components/Navbar/Button/Button';
 
-const Header =(props:{changePage:any, currentPage:string}) =>{
-      
-   
+const Header =(props:{changePage:any, currentPage:string, dropMenu:boolean,toggleDropMenu:any}) =>{
 
     return   <div className='headerContainer '>
              <div className='headerContainer__content'> 
              <MyName />
-             <Button  />
-             <Navbar currentPage={props.currentPage} changPage={props.changePage} ></Navbar>
+             <Button toggleDropMenu={props.toggleDropMenu} dropMenu={props.dropMenu} />
+             <Navbar currentPage={props.currentPage} changPage={props.changePage} dropMenu={props.dropMenu} toggelDropMenu={props.toggleDropMenu}></Navbar>
              </div>
              </div>
 
