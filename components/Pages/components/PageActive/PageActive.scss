@@ -40,3 +40,8 @@
     background-image: url(../../../../assets/snow5.jpg);
     display: flex;
 }
+.LittleGamesBg{
+    @extend .defaultBg;
+    background-image: url(../../../../assets/snow4.jpg);
+    display: flex;
+}
