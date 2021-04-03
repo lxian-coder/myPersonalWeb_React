@@ -5,35 +5,35 @@ import {PAGE} from '../../../../constraints';
 
 const ITEMS = [{
         key : 'home',
-        href: PAGE.HOME,
+        currentPage: PAGE.HOME,
         text: 'Home',
 },{
         key : 'about',
-        href: PAGE.ABOUT,
+        currentPage: PAGE.ABOUT,
         text: 'About',  
 },{
         key : 'resume',
-        href: PAGE.RESUME,
+        currentPage: PAGE.RESUME,
         text: 'Resume',
 },{
         key : 'contact',
-        href: PAGE.CONTACT,
+        currentPage: PAGE.CONTACT,
         text: 'Contact',
 },{
         key : 'blog',
-        href: PAGE.BLOG,
+        currentPage: PAGE.BLOG,
         text: 'Blog',
 },{
         key : 'littlegames',
-        href: PAGE.LITTLEGAMES,
+        currentPage: PAGE.LITTLEGAMES,
         text: 'LittleGames',   
 }]
 
-const Navbar = ()=>{
+const Navbar = (props:{changPage:any, currentPage:string})=>{
      
 return <div className='navbar'>
         {ITEMS.map((item) => (
-                <Item key={item.key} href={item.href}>{item.text}</Item>
+                <Item  active={props.currentPage === item.currentPage}   key={item.key} onClick={()=>props.changPage(item.currentPage)}>{item.text}</Item>
         ))}
        </div>
 }

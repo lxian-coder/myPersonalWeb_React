@@ -4,15 +4,15 @@ import MyName from './components/Navbar/MyName/MyName'
 import './Header.scss'
 import Button from './components/Navbar/Button/Button';
 
-const Header =(buttonActionObj:object) =>{
+const Header =(props:{changePage:any, currentPage:string}) =>{
       
    
 
     return   <div className='headerContainer '>
              <div className='headerContainer__content'> 
              <MyName />
-             <Button {...buttonActionObj} />
-             <Navbar ></Navbar>
+             <Button  />
+             <Navbar currentPage={props.currentPage} changPage={props.changePage} ></Navbar>
              </div>
              </div>
 

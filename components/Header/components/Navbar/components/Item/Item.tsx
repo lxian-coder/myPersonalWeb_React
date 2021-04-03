@@ -1,10 +1,17 @@
 import React from 'react';
 import './Item.scss';
 
-const Item = (props:{ href: string, children: string, }) => {
-
-
-    return <a  className='items' href={props.href}>{props.children}</a>
+const Item = (props:{ onClick:any, children: string, active:boolean}) => {
+   
+    let className = 'items';
+   if(props.active){
+       className += ' selected';
+   }
+   
+    return <a onClick={(event)=>{
+        event.preventDefault;
+        props.onClick();
+    }} className={className} >{props.children}</a>
 
 }
 

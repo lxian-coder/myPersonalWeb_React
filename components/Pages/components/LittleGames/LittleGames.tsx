@@ -3,9 +3,9 @@ import './LittleGames.scss';
 import PageActive from '../PageActive/PageActive';
 
 
-const LittleGames = (props:{active:string}) => {
+const LittleGames = (props:{active:boolean}) => {
     let className = 'defaultBg';
-    if(props.active === 'active'){
+    if(props.active){
          className += ' LittleGamesBg'
     }
     
@@ -18,6 +18,7 @@ return      <PageActive className= {className} >
                    <h2 className="gameButton"> <a className="gameButton__a" href="./drumGame.html">Drum Kit Game</a> </h2>
                    <h2 className="gameButton"><a className="gameButton__a" href="./simonGame.html">Simon Game </a></h2>
             </section >
+            <div className="snowEffect"></div>
             </PageActive>
 }
 export default LittleGames;

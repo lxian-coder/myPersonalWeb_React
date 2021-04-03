@@ -1,9 +1,9 @@
-export const PAGE:Record<string,string> = {
+export const PAGE = {
     HOME:'HOME',
     ABOUT:'ABOUT',
     RESUME:'RESUME',
     CONTACT:'CONTACT',
     BLOG:'BLOG',
-    LITTLEGAME:'LITTLEGAMES',
+    LITTLEGAMES:'LITTLEGAMES',
 
 }

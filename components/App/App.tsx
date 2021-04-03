@@ -3,10 +3,12 @@ import Button from '../Header/components/Navbar/Button/Button';
 import Header from '../Header/Header';
 import Pages from '../Pages/Pages';
 import Footer from '../Footer/Footer';
+import { PAGE  } from '../../constraints';
 
 type Props={};
 type State={
-    buttonDrop:boolean,
+    currentPage:string,
+    buttonDrop?:boolean,
 }
 
 class App extends React.Component<Props, State>{
@@ -14,29 +16,28 @@ class App extends React.Component<Props, State>{
         super(props);
 
         this.state = {
-            buttonDrop : false,
+            currentPage : PAGE.HOME,
         };
-        this.buttonAction = this.buttonAction.bind(this);
+        // constructor  this alway points to APP, so we bind this to changePage method 
+      this.changePage = this.changePage.bind(this);
     }
-    buttonAction (drop:boolean){
-        this.setState({
-            buttonDrop: drop ,
-        });
-    }
-   
+  changePage(pageName:string){
+      this.setState({
+          currentPage: pageName,
+      })
+  }
+
     render() {
-        const buttonActionObj = {
-            buttonAction : this.buttonAction,
-            test1 : "aaa",
-        }
+       const { currentPage } = this.state;
+
        return(
            <div>
-               <Header {...buttonActionObj}/>
-               <Pages />
+               <Header currentPage={currentPage} changePage={this.changePage}/>
+               <Pages currentPage={currentPage} changePage={this.changePage}/>
                <Footer />
            </div>
        )
    }
-
 }
+
 export default App;

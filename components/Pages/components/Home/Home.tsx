@@ -1,9 +1,9 @@
 import React from 'react';
 import './Home.scss';
 
-const Home = (props:{active:string}) => {
+const Home = (props:{active:boolean,onClick:any}) => {
     let className:string = 'backgroundPicture';
-    if(props.active === 'active'){
+    if(props.active){
      className += ' pageActive';
      console.log({className});
     }
@@ -15,7 +15,7 @@ const Home = (props:{active:string}) => {
         <h1 className="text hometitle">DARCY XIAN</h1>
         <p className="text">Java Web Developer</p>
     </div>
-    <a className="text vcardLink" href="./aboutMe.html">
+    <a onClick={(evt) =>{evt.preventDefault; props.onClick()}} className="text vcardLink" >
         <div className=" vcardbutton">
             <div className="vcardText"> <div className="vcardText2">Vcard Style</div> </div>
         </div>
