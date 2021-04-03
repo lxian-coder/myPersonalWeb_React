@@ -12,10 +12,10 @@ const Pages = () =>{
   return (
      <><Home active='inactive' />
       <About active='inactive' />
-      <Resume active ='inactive' />
+      <Resume active ='active' />
       <Contact active ='inactive' />
       <Blog active = 'inactive' />
-      <LittleGames active = 'active' />
+      <LittleGames active = 'inactive' />
       <div className="snowEffect"></div>
       </>
   )

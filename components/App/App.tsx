@@ -2,6 +2,7 @@ import React, { JSXElementConstructor } from 'react';
 import Button from '../Header/components/Navbar/Button/Button';
 import Header from '../Header/Header';
 import Pages from '../Pages/Pages';
+import Footer from '../Footer/Footer';
 
 type Props={};
 type State={
@@ -32,6 +33,7 @@ class App extends React.Component<Props, State>{
            <div>
                <Header {...buttonActionObj}/>
                <Pages />
+               <Footer />
            </div>
        )
    }
