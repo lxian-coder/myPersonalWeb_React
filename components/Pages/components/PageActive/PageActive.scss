@@ -30,3 +30,13 @@
     background-image: url(../../../../assets/snow6.jpg);
     display: flex;
 }
+.ContactBg{
+    @extend .defaultBg;
+    background-image: url(../../../../assets/snow3.jpg);
+    display: flex;
+}
+.BlogBg{
+    @extend .defaultBg;
+    background-image: url(../../../../assets/snow5.jpg);
+    display: flex;
+}
