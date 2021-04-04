@@ -8,6 +8,7 @@ import LittleGames from './components/LittleGames/LittleGames';
 import './Pages.scss';
 import {PAGE} from '../../constraints';
 import DrumGame from './components/DrumGame/DrumGame';
+import SimonGame from './components/SimonGame/SimonGame';
 
 const Pages = (props:{currentPage:string,drumGame:boolean, changePage:any, drumGameStart:any}) => {
 
@@ -17,8 +18,11 @@ const Pages = (props:{currentPage:string,drumGame:boolean, changePage:any, drumG
       <Resume active ={props.currentPage === PAGE.RESUME} />
       <Contact active ={props.currentPage === PAGE.CONTACT} />
       <Blog active = {props.currentPage === PAGE.BLOG} />
-      <LittleGames active = {props.currentPage === PAGE.LITTLEGAMES} onClick={()=>props.changePage(PAGE.DRUMGAME)} />
+      <LittleGames active = {props.currentPage === PAGE.LITTLEGAMES} 
+        onClick={()=>props.changePage(PAGE.DRUMGAME)}
+        onClick2={()=>props.changePage(PAGE.SIMONGAME)} />
       <DrumGame  active = {props.currentPage === PAGE.DRUMGAME} onClick={()=>props.drumGameStart(true)} drumGame={props.drumGame}/>
+      <SimonGame  active = {props.currentPage === PAGE.SIMONGAME} />
       </>
   )
 }

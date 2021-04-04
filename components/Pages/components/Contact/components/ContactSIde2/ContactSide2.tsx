@@ -41,7 +41,7 @@ const ContactSide2 = ()=> {
       } 
   }
 
-return   <section className="side2Container contactContainer" >
+return  <section className="side2Container contactContainer" >
 <h2 className="party2__body__title2">CONTACT <span className="part2__body__h2"></span>
     <span className="part2__body__shadowtext1">CONTACT</span> 
    </h2>

@@ -3,7 +3,7 @@ import './LittleGames.scss';
 import PageActive from '../PageActive/PageActive';
 
 
-const LittleGames = (props:{active:boolean, onClick:any}) => {
+const LittleGames = (props:{active:boolean, onClick:any, onClick2:any}) => {
     let className = 'defaultBg';
     if(props.active){
          className += ' LittleGamesBg'
@@ -18,8 +18,11 @@ return      <PageActive className= {className} >
                    <h2 onClick={(evt)=>{
                        evt.preventDefault();
                        props.onClick();
-                   }} className="gameButton"> <a className="gameButton__a" href="./drumGame.html">Drum Kit Game</a> </h2>
-                   <h2 className="gameButton"><a className="gameButton__a" href="./simonGame.html">Simon Game </a></h2>
+                   }} className="gameButton"> <a className="gameButton__a" >Drum Kit Game</a> </h2>
+                   <h2 onClick={(evt)=>{
+                       evt.preventDefault();
+                       props.onClick2();
+                   }}className="gameButton"><a className="gameButton__a" >Simon Game </a></h2>
             </section >
             <div className="snowEffect"></div>
             </PageActive>

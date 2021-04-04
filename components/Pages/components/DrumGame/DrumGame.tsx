@@ -22,9 +22,6 @@ if(props.drumGame){
 
 
 const gameStart = ()=>{
-      
-    
-     
   // Detecting Button Press
 // 遍历每个durm
 for(let i = 0; i< document.querySelectorAll(".drum").length; i++){
