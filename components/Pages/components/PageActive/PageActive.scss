@@ -45,3 +45,8 @@
     background-image: url(../../../../assets/snow4.jpg);
     display: flex;
 }
+.DrumGameBg{
+    @extend .defaultBg;
+    background-image: url(../../../../assets/snow6.jpg);
+    display: flex;
+}

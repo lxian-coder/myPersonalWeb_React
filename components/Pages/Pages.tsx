@@ -7,8 +7,9 @@ import Blog from './components/Blog/Blog';
 import LittleGames from './components/LittleGames/LittleGames';
 import './Pages.scss';
 import {PAGE} from '../../constraints';
+import DrumGame from './components/DrumGame/DrumGame';
 
-const Pages = (props:{currentPage:string, changePage:any}) => {
+const Pages = (props:{currentPage:string,drumGame:boolean, changePage:any, drumGameStart:any}) => {
 
   return (
      <><Home active = {props.currentPage === PAGE.HOME} onClick={()=>props.changePage(PAGE.ABOUT)}  />
@@ -16,7 +17,8 @@ const Pages = (props:{currentPage:string, changePage:any}) => {
       <Resume active ={props.currentPage === PAGE.RESUME} />
       <Contact active ={props.currentPage === PAGE.CONTACT} />
       <Blog active = {props.currentPage === PAGE.BLOG} />
-      <LittleGames active = {props.currentPage === PAGE.LITTLEGAMES} />
+      <LittleGames active = {props.currentPage === PAGE.LITTLEGAMES} onClick={()=>props.changePage(PAGE.DRUMGAME)} />
+      <DrumGame  active = {props.currentPage === PAGE.DRUMGAME} onClick={()=>props.drumGameStart(true)} drumGame={props.drumGame}/>
       </>
   )
 }

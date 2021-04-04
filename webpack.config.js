@@ -34,12 +34,12 @@ module.exports = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/i,
+                test: /\.(png|jpe?g|gif|svg|mp3)$/i,
                 use: 
                   {
-                    loader: 'file-loader',
-                  },
+                    loader: 'file-loader', 
             },
+        },
             {  // 关于sass 的设置，
                 test: /\.s[ac]ss$/i,
                 use: [
