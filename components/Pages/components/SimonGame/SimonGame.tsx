@@ -121,7 +121,7 @@ return      <PageActive className= {className} >
                 {
                  gameStart();
                 }}>Press here to Start</h1>
-              <div className="simonContainer">
+          
                 <div className="row">
                   <div id="green" className="btn green ">
                   </div>
@@ -134,7 +134,7 @@ return      <PageActive className= {className} >
                   <div id="blue" className="btn blue ">
                   </div>
                 </div>
-              </div>
+             
             </section >
                 <div className="snowEffect"></div>
             </PageActive>
