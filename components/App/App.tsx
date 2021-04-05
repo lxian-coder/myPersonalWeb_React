@@ -17,7 +17,7 @@ class App extends React.Component<Props, State>{
         super(props);
 
         this.state = {
-            currentPage : PAGE.SIMONGAME,
+            currentPage : PAGE.HOME,
             dropMenu: false,
             drumGame: false,
         };
