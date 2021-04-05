@@ -36,7 +36,7 @@ const gameStart = () => {
     function checkAnswer() {
         if(userClickedPattern[clickTime-1] !== gamePattern[clickTime-1]){
             playSound("wrong");
-            $("body").css("background-color","red");
+            $("simonbody").css("background-color","red");
             setTimeout(function(){$("body").css("background-color","#011F3F");},100);
             $("#level-title").text("Game over, Press Any Ket to Restart");
             level = 0;
