@@ -1,23 +1,28 @@
-.skillIcons__wrapper{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    width: 33%;
-    &__loaded{
-       width: 55px;
-       height: 55px;
-       justify-content: flex-start;
-       margin-right: 15px;
-      &:hover{
-       animation: upDown 1s;
-      } 
-    }
-    &__description{
-        color: #5a5a5a;
-        font-size: 13px;
-       }
-    }
+.skillIcons{
+
+  &__wrapper{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      width: 33%;
+      min-width: 130px;
+      &__loaded{
+         width: 55px;
+         height: 55px;
+         justify-content: flex-start;
+         margin-right: 15px;
+        &:hover{
+         animation: upDown 1s;
+        } 
+      }
+      &__description{
+          color: #5a5a5a;
+          font-size: 13px;
+          min-width: 50px;
+         }
+  }
+}

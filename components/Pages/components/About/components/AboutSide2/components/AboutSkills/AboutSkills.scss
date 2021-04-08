@@ -21,8 +21,11 @@
 }
 
 .skillsSVG{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content:flex-start;
+
 }
 
 .skillIcons__text{

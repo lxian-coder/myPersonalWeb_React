@@ -72,7 +72,7 @@ const BACK_SKILLS = [{
     key : 'AWS',
     skill: 'AWS',
     src: "https://res.cloudinary.com/diliv19aw/image/upload/v1579522919/pn6rpjmbakula9g56kbr.png",
-}]
+},]
 
 const TOOL = [{
     key:'Git',
