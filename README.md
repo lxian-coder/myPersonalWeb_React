@@ -4,4 +4,4 @@
 * Using as many as posible 'dummy components' and reduce the number of 'smart components' to make code maintainable and open for extension.
 * Successfully deployed to AWS cloud (S3, Route53).
 * Technique used: React.JS, Typescript, Javascript, HTML5, CSS3, Sass, Flexbox, Javascript, jQuery, AWS(S3, route53)
- URL:http://www.darcyxian.com/
+* URL:http://www.darcyxian.com/
