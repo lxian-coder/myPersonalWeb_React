@@ -4,7 +4,7 @@ import Navbar from '../Navbar';
 import { ProgressPlugin } from 'webpack';
 
 
-const Button  = (props:{dropMenu:boolean, toggleDropMenu:any})=>{
+const Button  = (props:{dropMenu:boolean, toggleDropMenu:(dropMenu:boolean)=>void})=>{
 
     const changeDropMenu = () => {
        props.toggleDropMenu(!props.dropMenu);

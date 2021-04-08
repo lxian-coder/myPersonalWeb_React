@@ -29,7 +29,7 @@ const ITEMS = [{
         text: 'LittleGames',
 }]
 
-const Navbar = (props:{changPage:any, currentPage:string,dropMenu:boolean, toggelDropMenu:any})=>{
+const Navbar = (props:{changPage:any, currentPage:string,dropMenu:boolean, toggelDropMenu:(dropMenu:boolean)=>void})=>{
 
 let className = 'navbar';
 if(props.dropMenu){

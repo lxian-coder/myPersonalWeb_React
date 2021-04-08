@@ -1,7 +1,8 @@
 import React from 'react';
 import './Item.scss';
 
-const Item = (props:{ onClick:any, children: string, active:boolean}) => {
+const Item = (props:{ onClick:() => void
+   , children: string, active:boolean}) => {
    
     let className = 'items';
    if(props.active){
