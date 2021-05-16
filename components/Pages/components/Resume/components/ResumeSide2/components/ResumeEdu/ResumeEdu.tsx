@@ -15,7 +15,7 @@ const ResumeEdu = ()=>{
              <div>
                  <h4 className="entry__h4" >Master of Information Technology and Systems</h4>
                  <div className="entry__schoolBlock">
-                     <p className="entry__schoolTime">02/2017 - 12/2019</p>
+                     {/* <p className="entry__schoolTime">02/2017 - 12/2019</p> */}
                      <p className="entry__school">(UTAS)University of Tasmania</p>
                  </div>
                 <p  className="entry__p">"Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor....etc"</p>

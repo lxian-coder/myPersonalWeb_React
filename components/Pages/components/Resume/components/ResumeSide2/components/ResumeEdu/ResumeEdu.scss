@@ -31,37 +31,9 @@
     &:hover{
         box-shadow:0px 10px 6px 5px rgb(0 0 0 / 30%);
     }
-    &::before{
-        content: " ";
-        width: 12px;
-        height: 12px;
-        border-radius: 10px;
-        background-color: $myblue;
-        display: inline-block;
-        box-shadow: 0 0 0 0.1875rem rgb(48 76 253 / 25%);
-        position: relative;
-        left: -58px;
-        z-index: 2;
-
-    }
-    &::after{
-        content: "";
-        display: inline-block;
-        background: $myblue;
-        height: 2px;
-        width: 25px;
-        border-radius: 1px;
-        position:absolute;
-        left: -27px;
-        top: 21.2px;
-        z-index: 1;
-       
-    }
 
     &__h4{
         margin-bottom: 20px;
-  
-        
     }
     &__p{
         font-size: 13px;
@@ -103,7 +75,7 @@
         color: $myblue;
     }
     &__school{
-        border-left: solid $mygrey;
+        // border-left: solid $mygrey;
         padding-left:10px ;
         margin-left: 10px;
         color: lighten($myword,30%);

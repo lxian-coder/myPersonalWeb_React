@@ -6,13 +6,13 @@ import Button from './components/Navbar/Button/Button';
 
 const Header =(props:{changePage:any, currentPage:string, dropMenu:boolean,toggleDropMenu:(dropMenu:boolean)=>void}) =>{
 
-    return   <div className='headerContainer '>
+    return   <header className='headerContainer '>
              <div className='headerContainer__content'> 
              <MyName />
              <Button toggleDropMenu={props.toggleDropMenu} dropMenu={props.dropMenu} />
              <Navbar currentPage={props.currentPage} changPage={props.changePage} dropMenu={props.dropMenu} toggelDropMenu={props.toggleDropMenu}></Navbar>
              </div>
-             </div>
+             </header>
 
 }
 export default Header;

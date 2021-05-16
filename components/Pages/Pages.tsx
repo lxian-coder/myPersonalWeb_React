@@ -13,7 +13,7 @@ import SimonGame from './components/SimonGame/SimonGame';
 const Pages = (props:{currentPage:string,drumGame:boolean, changePage:any, drumGameStart:any}) => {
 
   return (
-     <><Home active = {props.currentPage === PAGE.HOME} onClick={()=>props.changePage(PAGE.ABOUT)}  />
+     <main><Home active = {props.currentPage === PAGE.HOME} onClick={()=>props.changePage(PAGE.ABOUT)}  />
       <About active={props.currentPage === PAGE.ABOUT} />
       <Resume active ={props.currentPage === PAGE.RESUME} />
       <Contact active ={props.currentPage === PAGE.CONTACT} />
@@ -23,7 +23,7 @@ const Pages = (props:{currentPage:string,drumGame:boolean, changePage:any, drumG
         onClick2={()=>props.changePage(PAGE.SIMONGAME)} />
       <DrumGame  active = {props.currentPage === PAGE.DRUMGAME} onClick={()=>props.drumGameStart(true)} drumGame={props.drumGame}/>
       <SimonGame  active = {props.currentPage === PAGE.SIMONGAME} />
-      </>
+      </main>
   )
 }
 
