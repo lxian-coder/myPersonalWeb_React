@@ -5,24 +5,24 @@ import ResumeItem from './components/ResumeItem/ResumeItem'
 import ResumeEdu from './components/ResumeEdu/ResumeEdu';
 
 const PROJECT = [{
-       key :'1',
-       title:'Spring Pet Clinic Web Application',
-       description:'This is a multi-module Maven spring framework 5 application which can be used to manage Pet clinic data using a relational database.',
-       href:"http://petclinic.ap-southeast-2.elasticbeanstalk.com/",
-       techUsed:'Java, SpringBoot5, Hibernate, H2 Database, MySQL, Maven, MVC framework, Lombok, JPA, Mockito, JUnit, ThymeLeaf, CI/CD, AWS(RDS, Elastic Beanstalk)',
-},{
        key:'2',
-       title: 'Spring MVC REST Application',
-       description:"This a Spring Framework 5 web application which allows users to search, update, delete, add and store recipes data and picture online.",
-       href:"http://Springrecipe-env.eba-95k2immr.ap-southeast-2.elasticbeanstalk.com",
-       techUsed:"Swagger 2.0, JAXB, MapStruct, Postman, Java, SpringBoot 5, Maven, Spring MVC,  CI/CD",
+       title: 'SeaLife Restaurant (personal project)',
+       description:"I developed this web application for a small business owner of Tasmania to display his restaurant and attract more consumers. The web includes 2 parts: the website part for customers and the dashboard for the restaurant owner.",
+       href:"https://sealiferestaurantbicheno.com/#/",
+       techUsed:"ReactJs 17, Typescript 4.0, Webpack, HTML5, CSS3, Styled component, Flexbox, React Router, Axios, AWS(S3, route53)",
 },{
     key:'3',
-    title:'Spring MVC REST Application',
-    description:'This is a multi-module java  back-end project where I create RESTFul API including GET, PUT, POST, PATCH, DELETE operations.',
-    href:'http://restfull-swagger.ap-southeast-2.elasticbeanstalk.com/swagger-ui.html',
-    techUsed:'Swagger 2.0, JAXB, MapStruct, Postman, Java, SpringBoot 5, Maven, Spring MVC,  CI/CD',
-}]
+    title:'Sealife Restaurant Dashboard (personal project)',
+    description:'The restaurant owner and staff can log into the dashboard with different authority access and the owner can maintain the staff role account.',
+    href:'http://dashboard.sealiferestaurantbicheno.com/#/',
+    techUsed:'Java 11, Spring boot 5, Hibernate, H2 Database, PostgreSQL, Lombok, Flyway, docker, Junit, Mokito, Gradle, JWT token, Java security.',
+},{
+    key :'1',
+    title:'ANZ Bank TPP Application',
+    description:'I am working on an ANZ bank project as a full-stack developer(Typescript, JAVA).This project is a part of the bank\'s big system. Different transaction messages from upstream are received, processed, and sent downstream by this application. It is also responsible for analyzing response messages from downstream and then either doing the closing operations, processing them further, or reporting to upstreams. UI and restful APIs are also provided for authorized inside users to manipulate data or step into the message process. The whole project is mainly based on Java and Springboot.',
+    href:"",
+    techUsed:'Java 8, SpringBoot 1.5.10, Hibernate, Oracle DB, Maven, Lombok 1.18.20, JPA, JPQL, restFul API, Mockito 3.12.1, JUnit3/4, Active MQ, postman',
+},]
 
 const ResumeSide2 = ()=> {
     return <Side2>

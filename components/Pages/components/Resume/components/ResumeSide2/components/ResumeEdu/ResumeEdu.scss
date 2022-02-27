@@ -46,24 +46,7 @@
         &:hover{
             color: blue;
         }
-        &::after{
-         
-            content: " ";
-            height: 3px;
-            max-width: 130px;
-            width: 100%;
-            border-radius: 20px;
-            position: absolute;
-            left: 20px;
-            top: 60px;
-            background: $myblue;
-            transition: all 0.3s ease;
-            transform-origin: left;
-            transform: scale(0,1) ;
-        }
-        &:hover::after{
-            transform: scale(2,1);
-        }
+
     }
     &__schoolBlock{
         font-size: 13px;
